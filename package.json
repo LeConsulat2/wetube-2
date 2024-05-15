@@ -1,0 +1,17 @@
+{
+  "name": "wetube-2",
+  "version": "1.0.0",
+  "description": "JP's Training Videos",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LeConsulat2/wetube-2.git"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Jonathan<jonathan.park@aut.ac.nz>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
