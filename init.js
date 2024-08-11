@@ -13,7 +13,7 @@ db.once('open', () => {
   console.log('✅  Connected to DB');
 });
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
   console.log(`✅  Listening on: http://localhost:${PORT}`);
