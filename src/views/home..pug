@@ -2,6 +2,8 @@ extends layout
 
 block content
   h2 Home
+  if loggedIn
+    p Welcome back, #{loggedInUser.username}!
   ul
     each video in videos
       li

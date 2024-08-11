@@ -1,7 +1,9 @@
-extends layout 
+extends layout
 
-block content 
-    h2 #{video.title}
-    video(src=video.fileUrl, controls)
-    p video.descriptionp 
-    p Uploaded by #{video.creater.username}
+block content
+  h2 #{video.title}
+  video(src=video.fileUrl, controls)
+  p #{video.description}
+  p Uploaded by #{video.creator.username}
+  if loggedIn
+    p Logged in as #{loggedInUser.username}
