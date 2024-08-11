@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h2 Home
+  ul
+    each video in videos
+      li
+        a(href=`/videos/${video._id}`) #{video.title}
+        p Views: #{video.views}

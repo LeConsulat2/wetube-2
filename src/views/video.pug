@@ -1,0 +1,7 @@
+extends layout 
+
+block content 
+    h2 #{video.title}
+    video(src=video.fileUrl, controls)
+    p video.descriptionp 
+    p Uploaded by #{video.creater.username}

@@ -1,0 +1,12 @@
+extends layout 
+
+block content 
+    h2 Login 
+    form(action="/login", method="post")
+        label(for="email") Email 
+        input(type="email", name="email", id="email", required)
+        label(for="password") Password 
+        input(type="password", name="password", id="password", required)
+        button(type="submit") Login 
+    if errorMessage 
+        p #{errorMessage}

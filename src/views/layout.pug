@@ -1,0 +1,21 @@
+doctype html 
+html(lang="en")
+    head 
+        meta(carset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Wetube-2 
+        link(rel="stylesheet", href="/css/styles.css")
+    body 
+        header  
+            h1 
+                a(href="/") Wetube-2 
+            nav
+                if !locals.loggedIn
+                a(href="/login") Login 
+                a(href="join") Join 
+                else 
+                a(href="/users/edit-profile") Edit Profile 
+                a(href="/users/change-password") Change Password 
+                a(href="/videos/upload") Upload 
+            main 
+                block content 
